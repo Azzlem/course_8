@@ -4,6 +4,9 @@ services:
 
   redis:
     image: redis
+    restart: always
+    expose:
+        - '6379'
     ports:
       - '6379:6379'
   db:
